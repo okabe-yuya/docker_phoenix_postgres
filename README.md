@@ -24,6 +24,13 @@ phoenixのprojectを生成(その他オプションは自由に付けてくだ�
 生成したprojectをlocal環境にcopy
 > $ sudo docker cp elixir_train:/app/backend .
 
+起動していたcontainerをstop
+> $ docker ps
+> $ docker stop contaienr_id
+
+copyしたbackendのdirectoryの所有者をrootからuserに変更(rootでログインしている場合は不要)
+> $ sudo chown -R user_name backend
+
 ## postgresの設定とdatabaseの作成
 localにcopyしたphoenixの./project-name/config/dev.exsを編集
 ```
