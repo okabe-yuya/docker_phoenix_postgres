@@ -6,6 +6,7 @@ local環境でphoenixのinit createを行うと、elixirのversionやphoenixのv
 > $ rm -rf .git
 
 buildしてcontainerを作成
+> $ cd phoenix
 
 タグ付けに使用したい好きな名称でOK
 tag_name=phoenix_server:dev 
